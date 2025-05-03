@@ -13,7 +13,7 @@ const About = () => {
       <section className="text-center py-16 px-6">
        
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-lora">
-          Hi, I'm Samuel — the founder of GoldenTide. I created this space to help you discover the magic of the coast, one beach at a time.
+          Hi, I'm Samuel — the founder of GoldenBeach. I created this space to help you discover the magic of the coast, one beach at a time.
         </p>
       </section>
 
@@ -37,7 +37,7 @@ const About = () => {
       {/* Why Section */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-amber-600 mb-4">Why I Do What I Do</h3>
+          <h3 className="text-2xl font-bold text-amber-600 mb-4">Why I Do What I Do ?</h3>
           <p className="text-lg text-gray-700 font-lora">
             I believe the beach is more than a destination — it's a healing space. Whether you're planning a trip, looking for calm, or simply love the sound
             of waves, GoldenTide was made for you. I hope each visit inspires you to breathe deeply, dream bigger, and explore more.

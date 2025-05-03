@@ -49,22 +49,23 @@ const Navbar= () => {
 
           {/*Mobile Menu View*/}
 
-          {isOpen && (
-            <div className="md:hidden mt-4 space-y-4">
-              <ul className="flex flex-col items-start space-y-2">
-                {navElements.map((contents,index)=>{
-                  return (
-                    <li key={index}  className="text-white font-poppins">
-                       <Link to= {contents.path } onClick={()=>setIsOpen(false)}>{contents.name}</Link >
-                  </li>
-                  )
-                })}
-              </ul>
-             <button className=" space-x-6 border border-white text-white font-poppins px-4 py-2 rounded-md hover:bg-white hover:text-amber-600 transition duration-300">
-            Call Us
-          </button>
-            </div>
-          )}
+                {isOpen && (
+        <div className="md:hidden absolute top-[100%] left-0 w-full bg-amber-600 p-4 rounded-b-lg z-10">
+          <ul className="flex flex-col items-start space-y-4">
+            {navElements.map((contents, index) => (
+              <li key={index} className="text-white font-poppins text-lg">
+                <Link to={contents.path} onClick={() => setIsOpen(false)}>{contents.name}</Link>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-4">
+            <button className="w-full border border-white text-white font-poppins px-4 py-2 rounded-md hover:bg-white hover:text-amber-600 transition duration-300">
+              Call Us
+            </button>
+          </div>
+        </div>
+      )}
+
         </nav>
    
     );
