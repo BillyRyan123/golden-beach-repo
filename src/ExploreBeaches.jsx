@@ -8,7 +8,7 @@ import BeachProperties from "./BeachProperties";
 const ExploreBeaches =()=>{
       
         useEffect(()=>{
-          document.title="GoldenTide | ExploreBeaches";
+          document.title="GoldenBeach | ExploreBeaches";
         },[])
 
       const beachDetails =[

@@ -3,7 +3,7 @@ import samuel from "./Images/samuel.jpg"; // Replace with your actual image path
 
 const About = () => {
   useEffect(() => {
-    document.title = "GoldenTide | About Me";
+    document.title = "GoldenBeach | About Me";
   }, []);
 
   return (

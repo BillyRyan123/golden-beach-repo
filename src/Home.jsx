@@ -1,17 +1,17 @@
-import {useState} from "react";
-import { useEffect } from "react";
+import {useEffect} from "react";
 import CardsDisplay from "./CardsDisplay";
 import deck_seashore from "./Images/deck_seashore.jpg";
 import sunset2 from "./Images/sunset2.jpeg";
 import beachh  from "./Images/beachh.jpg";
-import sunset3 from "./Images/sunset3.jpeg"
+import sunset3 from "./Images/sunset3.jpeg";
+
 const Home = () =>{
 
       useEffect(()=>{
-        document.title="GoldenTide | Home";
+        document.title="GoldenBeach | Home";
       },[]);
 
-        const description = " Craving the perfect beach escape? Discover hidden gems, golden sunsets, and the most peaceful shorelines—all in one place. With GoldenTide, your next beach day is just a click away. Start exploring now "; 
+        const description = " Craving the perfect beach escape? Discover hidden gems, golden sunsets, and the most peaceful shorelines—all in one place. With GoldenBeach, your next beach day is just a click away. Start exploring now "; 
         
         const cardContents=[
            {
@@ -29,12 +29,7 @@ const Home = () =>{
         ];
 
 
-       const[inputValue, setInputValue]= useState("");
-
-        
-       const handleInputChange = (event) => {
-            setInputValue(event.target.value);
-       }
+     
 
 
         
@@ -73,14 +68,7 @@ const Home = () =>{
 
 
 
-               <div className="flex flex-col items-center">
-               {inputValue}
-                <input type="text" onChange={handleInputChange} className="mt-1 m-4 p-2 w-1/3 border border-amber-600 bg-amber-50 text-gray-800 rounded-md shadow-sm focus:border-amber-700 focus:ring-amber-700 focus:outline-none"/>
-            <button   className="bg-amber-700 w-1/6 text-white font-lora py-2 px-4 rounded-xl mt-1">
-             Sign up
-            </button>
-
-               </div>
+             
 
         </main>
        
